@@ -1,4 +1,4 @@
-# 🌸Flower_shop🌸
+# 🌸Blossom Timep🌸
 ### What is this project?
 This is a group project __"flower shop site"__. The site has a large selection of various flowers with delivery anywhere.
  ![ilustration](https://as1.ftcdn.net/v2/jpg/04/62/58/74/1000_F_462587458_pxEWZHjBu7r8CfrQxjpUJyuPsFUIMMlN.jpg)
