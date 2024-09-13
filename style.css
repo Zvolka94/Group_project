@@ -1,1 +1,206 @@
+.header_home {
+    background-color: #FFEEF7;
+}
 
+header,footer{
+    padding: 30px 50px;
+}
+
+
+.header_home,.header_aboutus{
+    height: 680px;
+}
+
+.header_reviews{
+    height: 500px;
+    background: #EEF6E6;
+}
+
+
+.header_href {
+    display: flex;
+    display: inline;
+    flex-direction: row;
+    text-decoration: none;
+    font-family: "Dosis", sans-serif;
+    font-size: 27px;
+    color: #000000;
+    padding-right: 50px;
+
+}
+
+.head_png {
+    margin-top: -50px;
+    display: flex;
+    float: right;
+    width: 45%;
+
+}
+
+
+.h_header {
+    margin-top: 50px;
+}
+
+.head_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.h2_header {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 26px;
+    color: #312F0D;
+    font-family: sans-serif;
+}
+
+.h1_header {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 66px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #312F0D;
+}
+
+.p_header {
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #312F0D;
+
+
+}
+
+.description {
+    margin-top: 140px;
+
+}
+
+.flowers_jpg {
+    float: left;
+}
+
+.aboutus_text {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    padding-left: 50px;
+    width: 50%;
+}
+
+
+.h1_aboutus,.h1_contacts,.h1_reviews{
+    display: flex;
+    justify-content: start;
+    font-size: 35px;
+    color: #1b291d;
+}
+
+.delivery {
+    padding-top: 100px;
+}
+
+.delivery_text {
+    width: 50%;
+}
+
+.delivery_jpg {
+    display: flex;
+    float: right;
+    width: 48%;
+    height: 450px;
+    margin-top: 50px;
+}
+
+.h1_delivery{
+    display: flex;
+    justify-content: start;
+    font-size: 35px;
+    color: #1b291d;
+}
+
+.b_delivery {
+    font-size: 25px;
+}
+
+.p_delivery {
+    font: 1em sans-serif;
+    font-size: 20px;
+    color: #1b291d;
+    font-style: italic;
+}
+
+.p_aboutus {
+    font: 1em sans-serif;
+    font-size: 23px;
+    color: #1b291d;
+}
+
+.reviews_container{
+
+}
+
+.review{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    position: absolute;
+    width: 325px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.vert-menu {
+    margin-top: 40px;
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+
+.footer-elements-first {
+    font-family: "Readex Pro", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-elements {
+    margin-left: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #686868;
+    text-decoration: none;
+}
+
+.footer-elements:hover {
+    border-bottom: 2px solid #013a10;
+    width: fit-content;
+}
+
+footer{
+    height: 500px;
+}
