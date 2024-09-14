@@ -31,6 +31,39 @@ header,footer, main{
     margin: 5px 10px;
 }
 
+.boquet_name{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1E1E1E;
+}
+
+.boquet_description{
+
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+}
+
+.buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    background: #BEEE8F;
+    border-radius: 6px;
+    width: 50px;
+    height: 10px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1E1E1E;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
 .avatar{
     display: flex;
     float: left;
@@ -226,6 +259,79 @@ header,footer, main{
     border-radius: 10px;
     margin: 50px;
     justify-content:start;
+}
+
+
+.buy2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    background: #FAB0D8;
+    border-radius: 6px;
+    width: 70px;
+    height: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #1E1E1E;
+    text-decoration: none;
+    float: right;
+}
+
+.text-card{
+    width: 260px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.text-card2{
+    font-family: sans-serif;
+}
+
+.card{
+    background-color: #FFEEF7;
+    width: 260px;
+    height: 450px;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.price-card{
+    height: 22px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    float: left;
+}
+
+.card-img{
+    display: flex;
+    width:260px;
+    height:250px;
+}
+
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
+    position: relative;
+    width: 100%;
+
 }
 
 .footer-menu {
