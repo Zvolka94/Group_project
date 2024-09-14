@@ -1,3 +1,4 @@
+
 .header_home {
     background-color: #FFEEF7;
 }
@@ -146,10 +147,6 @@ header,footer{
     color: #1b291d;
 }
 
-.reviews_container{
-
-}
-
 .review{
 
     display: flex;
@@ -160,6 +157,17 @@ header,footer{
     width: 325px;
     background: #FFFFFF;
     border-radius: 8px;
+}
+
+.review_h1{
+    font-family: sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 30px;
+    flex: none;
+    align-self: stretch;
 }
 
 .footer-menu {
