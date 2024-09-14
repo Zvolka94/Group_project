@@ -3,7 +3,7 @@
     background-color: #FFEEF7;
 }
 
-header,footer{
+header,footer, main{
     padding: 30px 50px;
 }
 
@@ -117,11 +117,11 @@ header,footer{
     width: 50%;
 }
 
-.h1_reviews{
+.h1_reviews,.h1_catalogue{
     margin-top: 90px;
 }
 
-.h1_aboutus,.h1_contacts,.h1_reviews{
+.h1_aboutus,.h1_contacts,.h1_reviews,.h1_new,.h1_catalogue{
     display: flex;
     justify-content: start;
     font-size: 35px;
