@@ -117,11 +117,11 @@ header,footer, main{
     width: 50%;
 }
 
-.h1_reviews,.h1_catalogue{
+.h1_reviews,.h1_catalog{
     margin-top: 90px;
 }
 
-.h1_aboutus,.h1_contacts,.h1_reviews,.h1_new,.h1_catalogue{
+.h1_aboutus,.h1_contacts,.h1_reviews,.h1_new,.h1_catalog{
     display: flex;
     justify-content: start;
     font-size: 35px;
