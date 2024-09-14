@@ -12,12 +12,23 @@ header,footer, main{
     height: 680px;
 }
 
-.header_reviews{
+.header_reviews,.header_new,.main_new{
     background: #EEF6E6;
 }
 
 .user{
     font-family: sans-serif;
+}
+
+.main_new{
+    height: 800px;
+}
+
+.new_img{
+    display: flex;
+    width: 130px;
+    justify-content: start;
+    margin: 5px 10px;
 }
 
 .avatar{
@@ -200,6 +211,21 @@ header,footer, main{
     flex-direction: row;
     flex: none;
     align-self: stretch;
+}
+
+.new_card_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.boquet{
+    display: flex;
+    width: 80%;
+    height: 180px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 50px;
+    justify-content:start;
 }
 
 .footer-menu {
