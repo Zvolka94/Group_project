@@ -22,52 +22,218 @@
             const gardDetailsContainer = document.getElementById("flowers-details");
             const cardData = {
                 violet: {
-                    title: "One Life Graphic T-shirt",
+                    title: "violet",
                     description:
-                        "This graphic t-shirt which is perfect for any occasion. Crafted from a s",
-                    images:".violet.jpg",
-                    price: "",
+                        "violet",
+                    price: "100$",
+                    images: ".violet.jpg",
                     sizes: ["Small", "Medium", "Large"],
-                    reviews:[
+                    reviews: [
                         "",
                         "",
                         "",
-                ],
+                    ],
                 },
                 gold: {
-                    title: "One Life Graphic T-shirt",
+                    title: "gold",
                     description:
-                        "This graphic t-shirt which is perfect for any occasion. Crafted from a s",
-                    images:".gold.jpg",
-                    price: "",
+                        "gold",
+                    images: ".gold.jpg",
+                    price: "100$",
                     sizes: ["Small", "Medium", "Large"],
-                    reviews:[
+                    reviews: [
                         "",
                         "",
                         "",
-                ],
-            },
-        };
+                    ],
+                },
+                sunny: {
+                    title: "sunny",
+                    description:
+                        "sunny",
+                    images: ".sunny.jpg",
+                    price: "100$",
+                    sizes: ["Small", "Medium", "Large"],
+                    reviews: [
+                        "",
+                        "",
+                        "",
+                    ],
+                },
+                symphony: {
+                    title: "symphony",
+                    description:
+                        "symphony",
+                    images: ".symphony.jpg",
+                    price: "100$",
+                    sizes: ["Small", "Medium", "Large"],
+                    reviews: [
+                        "",
+                        "",
+                        "",
+                    ],
+                },
+                eustoma: {
+                    title: "eustoma",
+                    description:
+                        "eustoma",
+                    images: ".eustoma.jpg",
+                    price: "100$",
+                    sizes: ["Small", "Medium", "Large"],
+                    reviews: [
+                        "",
+                        "",
+                        "",
+                    ],
+                },
+                tenderness: {
+                    title: "tenderness",
+                    description:
+                        "tenderness",
+                    images: ".tenderness.jpg",
+                    price: "100$",
+                    sizes: ["Small", "Medium", "Large"],
+                    reviews: [
+                        "",
+                        "",
+                        "",
+                    ],
+                },
+                love: {
+                    title: "love",
+                    description:
+                        "love",
+                    images: ".love.jpg",
+                    price: "100$",
+                    sizes: ["Small", "Medium", "Large"],
+                    reviews: [
+                        "",
+                        "",
+                        "",
+                    ],
+                },
+                sunrise: {
+                    title: "sunrise",
+                    description:
+                        "sunrise",
+                    images: ".sunrise.jpg",
+                    price: "100$",
+                    sizes: ["Small", "Medium", "Large"],
+                    reviews: [
+                        "",
+                        "",
+                        "",
+                    ],
+                },
+                
+            };
+        });
         if (cardData[cardId]) {
             const card = cardData[cardId];
-            const priceWithTax = parseFloat(card.price) + 20;
             cardDetailsContainer.innerHTML = `
-    <header class="header_home">
-        <nav class="href">
-            <a class="header_href" class="home_btn" href="index.html">Home</a>
-            <a class="header_href" href="aboutus.html">About us</a>
-            <a class="header_href" href="new.html">New</a>
-            <a class="header_href" href="catalog.html">Catalog</a>
-            <a class="header_href" href="delivery.html">Delivery</a>
-            <a class="header_href" href="reviews.html">Reviews</a>
-            <a class="header_href" href="contact.html">Contact</a>
-            <a class="header_href" href="">Shopping bag</a>
-        </nav>
-        <h1 class="h1_catalog">Detail</h1>
-    </header>
-            `
+                <header class="header_home">
+                    <nav class="href">
+                        <a class="header_href" class="home_btn" href="index.html">Home</a>
+                        <a class="header_href" href="aboutus.html">About us</a>
+                        <a class="header_href" href="new.html">New</a>
+                        <a class="header_href" href="catalog.html">Catalog</a>
+                        <a class="header_href" href="delivery.html">Delivery</a>
+                        <a class="header_href" href="reviews.html">Reviews</a>
+                        <a class="header_href" href="contact.html">Contact</a>
+                        <a class="header_href" href="">Shopping bag</a>
+                    </nav>
+                    <h1 class="h1_home">Detail</h1>
+                </header>
+
+                <main class="main">
+                    <div class="card">
+                        <div class="images-container">
+                            <div class="large-image">
+                            <img src="${card.images}" alt="${card.title}" />
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h1>${card.title}</h1>
+                            <p class="price">Price: $${card.price}</p>
+                            <p class="desc">${card.description}</p>
+                            <hr class="line"/>
+                            <p class="size_title">Choose Size</p>
+                                <div class="sizes">
+                                    ${card.sizes
+                    .slice(0, 3)
+                    .map((c) => `<div class="">${c}</div>`)
+                    .join("")}
+                                </div>
+                            <hr class="line"/>
+                            <button.class="buy_btn">Add to Card</button>
+                            <hr class="line"/>
+                            <h2>All Reviews</h2>
+                                <div class="reviews">
+                                    ${card.reviews
+                    .slice(0, 3)
+                    .map((c) => `<div class="review">${c}</div>`)
+                    .join("")}
+                                </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer>
+        <h1 class="h1_contacts">Contacts</h1>
+        <div class='footer-menu'>
+            <ul class='vert-menu'>
+                <li><a class='footer-elements-first' href=''>Our phones</a></li>
+                <li><a class='footer-elements'
+                        href=''>0-000-000-000 – Free</a></li>
+                <li><a class='footer-elements'
+                        href=''>+0-000-000-00-00 - New York</a></li>
+                        <li><a class='footer-elements'
+                            href=''>(000) 000-00-00 - Kyivstar</a></li>
+                    <li><a class='footer-elements'
+                            href=''>(000) 000-00-00 – Kyiv</a></li>
+                    <li><a class='footer-elements'
+                            href=''>(000) 000-00-00 - Dnipro</a></li>
+                        <li><a class='footer-elements'
+                        href=''>We work around the clock</a></li>
+                <li><a class='footer-elements'
+                        href=''>e-mail: info@blossom.time</a></li>
+            </ul>
+            <ul class='vert-menu'>
+                <li><a class='footer-elements-first' href=''>Blossom Time</a></li>
+                <li><a class='footer-elements'
+                        href=''>About Blossom Time</a></li>
+                <li><a class='footer-elements'
+                        href=''>Delivery and payment</a></li>
+                        <li><a class='footer-elements'
+                            href=''>Quality guarantees</a></li>
+                    <li><a class='footer-elements'
+                            href=''>Reviews</a></li>
+                    <li><a class='footer-elements'
+                            href=''>Photo gallery</a></li>
+                        <li><a class='footer-elements'
+                        href=''>Feedback</a></li>
+                <li><a class='footer-elements'
+                        href=''>Cooperation</a></li>
+            </ul>
+            <ul class='vert-menu'>
+                <li><a class='footer-elements-first' href=''>To the buyer</a></li>
+                <li><a class='footer-elements'
+                        href=''>Useful information</a></li>
+                <li><a class='footer-elements'
+                        href=''>Public contract</a></li>
+                        <li><a class='footer-elements'
+                            href=''>Privacy and Refund Policy</a></li>
+                    <li><a class='footer-elements'
+                            href=''>Blog</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer> `} else {
+            cardDetailsContainer.innerHTML = `<h1>Product not found</h1>`
+        }
 
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

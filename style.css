@@ -87,9 +87,24 @@ header,footer, main{
     text-decoration: none;
     font-family: "Dosis", sans-serif;
     font-size: 27px;
-    color: #000000;
+    color: #68705c;
     padding-right: 50px;
 
+}
+
+.header_href1{
+    color: #000000;
+    display: flex;
+    display: inline;
+    flex-direction: row;
+    text-decoration: none;
+    font-family: "Dosis", sans-serif;
+    font-size: 27px;
+    padding-right: 50px;
+}
+
+.header_href:hover{
+    color: #000000;
 }
 
 .head_png {
