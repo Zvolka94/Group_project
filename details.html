@@ -19,14 +19,14 @@
         document.addEventListener("DOMContentLoaded", function () {
             const params = new URLSearchParams(window.location.search);
             const cardId = params.get("id");
-            const gardDetailsContainer = document.getElementById("flowers-details");
+            const cardDetailsContainer = document.getElementById("flowers-details");
             const cardData = {
                 violet: {
                     title: "violet",
                     description:
                         "violet",
                     price: "100$",
-                    images: ".violet.jpg",
+                    images: "violet.jpg",
                     sizes: ["Small", "Medium", "Large"],
                     reviews: [
                         "",
@@ -38,7 +38,7 @@
                     title: "gold",
                     description:
                         "gold",
-                    images: ".gold.jpg",
+                    images: "gold.jpg",
                     price: "100$",
                     sizes: ["Small", "Medium", "Large"],
                     reviews: [
@@ -51,7 +51,7 @@
                     title: "sunny",
                     description:
                         "sunny",
-                    images: ".sunny.jpg",
+                    images: "sunny.jpg",
                     price: "100$",
                     sizes: ["Small", "Medium", "Large"],
                     reviews: [
@@ -64,7 +64,7 @@
                     title: "symphony",
                     description:
                         "symphony",
-                    images: ".symphony.jpg",
+                    images: "symphony.jpg",
                     price: "100$",
                     sizes: ["Small", "Medium", "Large"],
                     reviews: [
@@ -77,7 +77,7 @@
                     title: "eustoma",
                     description:
                         "eustoma",
-                    images: ".eustoma.jpg",
+                    images: "eustoma.jpg",
                     price: "100$",
                     sizes: ["Small", "Medium", "Large"],
                     reviews: [
@@ -90,7 +90,7 @@
                     title: "tenderness",
                     description:
                         "tenderness",
-                    images: ".tenderness.jpg",
+                    images: "tenderness.jpg",
                     price: "100$",
                     sizes: ["Small", "Medium", "Large"],
                     reviews: [
@@ -103,7 +103,7 @@
                     title: "love",
                     description:
                         "love",
-                    images: ".love.jpg",
+                    images: "love.jpg",
                     price: "100$",
                     sizes: ["Small", "Medium", "Large"],
                     reviews: [
@@ -116,7 +116,7 @@
                     title: "sunrise",
                     description:
                         "sunrise",
-                    images: ".sunrise.jpg",
+                    images: "sunrise.jpg",
                     price: "100$",
                     sizes: ["Small", "Medium", "Large"],
                     reviews: [
@@ -127,11 +127,11 @@
                 },
                 
             };
-        });
+        
         if (cardData[cardId]) {
             const card = cardData[cardId];
             cardDetailsContainer.innerHTML = `
-                <header class="header_home">
+                <header class="header">
                     <nav class="href">
                         <a class="header_href" class="home_btn" href="index.html">Home</a>
                         <a class="header_href" href="aboutus.html">About us</a>
@@ -142,17 +142,15 @@
                         <a class="header_href" href="contact.html">Contact</a>
                         <a class="header_href" href="">Shopping bag</a>
                     </nav>
-                    <h1 class="h1_home">Detail</h1>
                 </header>
 
                 <main class="main">
-                    <div class="card">
-                        <div class="images-container">
-                            <div class="large-image">
+                    <h1 class="h1_home">Detail</h1>
+                    <div class="">
+                        <div class="image-container">
                             <img src="${card.images}" alt="${card.title}" />
-                            </div>
                         </div>
-                        <div class="details">
+                        <div class="">
                             <h1>${card.title}</h1>
                             <p class="price">Price: $${card.price}</p>
                             <p class="desc">${card.description}</p>
@@ -231,7 +229,7 @@
     </footer> `} else {
             cardDetailsContainer.innerHTML = `<h1>Product not found</h1>`
         }
-
+    });
     </script>
     <script src="script.js"></script>
 </body>
