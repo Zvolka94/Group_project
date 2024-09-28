@@ -2,3 +2,13 @@
     display: flex;
     width: 200px;
 }
+.header_details{
+    background-color: #FFEEF7;
+}
+.h1_home_details{
+    text-align: center;
+    color: #0b0c0b;
+}
+.title_details{
+    font-size: 28px;
+}

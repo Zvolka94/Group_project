@@ -131,7 +131,7 @@
         if (cardData[cardId]) {
             const card = cardData[cardId];
             cardDetailsContainer.innerHTML = `
-                <header class="header">
+                <header class="header_details">
                     <nav class="href">
                         <a class="header_href" class="home_btn" href="index.html">Home</a>
                         <a class="header_href" href="aboutus.html">About us</a>
@@ -145,13 +145,13 @@
                 </header>
 
                 <main class="main">
-                    <h1 class="h1_home">Detail</h1>
+                    <h1 class="h1_home_details">Detail</h1>
                     <div class="">
                         <div class="image-container">
                             <img src="${card.images}" alt="${card.title}" />
                         </div>
                         <div class="">
-                            <h1>${card.title}</h1>
+                            <h1 class="title_details"> ${card.title}</h1>
                             <p class="price">Price: $${card.price}</p>
                             <p class="desc">${card.description}</p>
                             <hr class="line"/>
