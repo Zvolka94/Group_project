@@ -164,87 +164,81 @@
 
                 <main class="main">
                     <h1 class="h1_home_details">Detail</h1>
-                    <div class="">
-                        <div class="image-container">
+                            <div class="card">
+                                <div class="image-container">
                             <img src="${card.images}" alt="${card.title}" />
-                        </div>
-                        <div class="">
+                                </div>
+                        <div class="card2">
                             <h1 class="title_details"> ${card.title}</h1>
                             <p class="price_details"> ${card.price}</p>
-                            <p class="desc">${card.description}</p>
+                            <hr class="line"/>
+                            <p class="desc_details">${card.description}</p>
                             <hr class="line"/>
                             <p class="size_title">Packaging</p>
                                 <div class="sizes">
-                                    ${card.sizes
-                    .slice(0, 3)
-                    .map((c) => `<div class="">${c}</div>`)
-                    .join("")}
+                                    <div class="color1"></div>
+                                    <div class="color2"></div>
+                                <div class="color3"></div>
                                 </div>
                             <hr class="line"/>
-                            <button.class="buy_btn">Add to Card</button>
-                            <hr class="line"/>
+                            <button class="buy_btn">Add to Card</button>
+                                </div>
+                        </div>
+                        <div class="">
                             <h2>All Reviews</h2>
                                 <div class="reviews_details">
                                     ${card.reviews
-                    .slice(0, 3)
-                    .map((c) => `<div class="review">${c}</div>`)
-                    .join("")}
+                                      .slice(0, 3)
+                                    .map((c) => `<div class="review">${c}</div>`)
+                                 .join("")}
                                 </div>
+                            
                         </div>
-                    </div>
                 </main>
-
                 <footer>
-        <h1 class="h1_contacts">Contacts</h1>
-        <div class='footer-menu'>
-            <ul class='vert-menu'>
-                <li><a class='footer-elements-first' href=''>Our phones</a></li>
-                <li><a class='footer-elements'
-                        href=''>0-000-000-000 – Free</a></li>
-                <li><a class='footer-elements'
-                        href=''>+0-000-000-00-00 - New York</a></li>
-                        <li><a class='footer-elements'
-                            href=''>(000) 000-00-00 - Kyivstar</a></li>
-                    <li><a class='footer-elements'
-                            href=''>(000) 000-00-00 – Kyiv</a></li>
-                    <li><a class='footer-elements'
-                            href=''>(000) 000-00-00 - Dnipro</a></li>
-                        <li><a class='footer-elements'
-                        href=''>We work around the clock</a></li>
-                <li><a class='footer-elements'
-                        href=''>e-mail: info@blossom.time</a></li>
-            </ul>
-            <ul class='vert-menu'>
-                <li><a class='footer-elements-first' href=''>Blossom Time</a></li>
-                <li><a class='footer-elements'
-                        href=''>About Blossom Time</a></li>
-                <li><a class='footer-elements'
-                        href=''>Delivery and payment</a></li>
-                        <li><a class='footer-elements'
-                            href=''>Quality guarantees</a></li>
-                    <li><a class='footer-elements'
-                            href=''>Reviews</a></li>
-                    <li><a class='footer-elements'
-                            href=''>Photo gallery</a></li>
-                        <li><a class='footer-elements'
-                        href=''>Feedback</a></li>
-                <li><a class='footer-elements'
-                        href=''>Cooperation</a></li>
-            </ul>
-            <ul class='vert-menu'>
-                <li><a class='footer-elements-first' href=''>To the buyer</a></li>
-                <li><a class='footer-elements'
-                        href=''>Useful information</a></li>
-                <li><a class='footer-elements'
-                        href=''>Public contract</a></li>
-                        <li><a class='footer-elements'
-                            href=''>Privacy and Refund Policy</a></li>
-                    <li><a class='footer-elements'
-                            href=''>Blog</a></li>
-            </ul>
+                    <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3><i class="fas fa-bag-shopping"></i> Shopping bag</h3>
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+          </div>
+    
+          <div class="box">
+            <h3>Quick links</h3>
+            <a href="#" class="link"> Home</a>
+            <a href="#" class="link">About us </a>
+            <a href="#" class="link"> New</a>
+            <a href="#" class="link"> Catalog</a>
+            <a href="#" class="link"> Contact</a>
+            <a href="#" class="link"> Shopping bag</a>
+          </div>
+    
+          <div class="box">
+            <h3>Our phones</h3>
+            <a href="#" class="link"> (098) 745-99-00 – Kyiv</a>
+            <a href="#" class="link"> (068) 345-21-78 - Dnipro</a>
+            <a href="#" class="link"> (098) 453-67-99 - Rivne</a>
+            <a href="#" class="link"> (067) 167-96-55 - Kharkiv</a>
+            <a href="#" class="link"> (096) 955-42-15 - Lviv</a>
+          </div>
+    
+          <div class="box">
+            <h3>Useful links</h3>
+            <a href="#" class="link"> Help center</a>
+            <a href="#" class="link"> Ask questions</a>
+            <a href="#" class="link"> Send feedback</a>
+            <a href="#" class="link"> Privacy policy</a>
+            <a href="#" class="link"> Terms of use</a>
+          </div>
         </div>
-        </div>
-    </footer> `} else {
+      </section>
+      </footer>
+ `} else {
             cardDetailsContainer.innerHTML = `<h1>Product not found</h1>`
         }
     });

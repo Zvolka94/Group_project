@@ -1,32 +1,163 @@
-.image-container{
-    text-align: left;
-    display: flex;
-    width: 100px;
-    height: 400px;
-
+.main {
+    padding: 25px 25px;
+    margin: 20px 20px;
+    width: 80%;
+  }
+.image-container img{
+    width: 450px;
+    height: auto;
+    padding: 0px;
 }
 .header_details{
     background-color: #FFEEF7;
 }
 .h1_home_details{
-    text-align: center;
+    font-size: 30px;
     color: #0e0f0e;
+    margin-top: 5px;
+
+}
+.card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(57, 55, 55);
+}
+.card2{
+    display: flex;
+    flex-direction: column;
 
 }
 .title_details{
-    text-align: right;
-    justify-content: center;
-    font-size: 28px;
-    color: rgb(13, 13, 14);
-
+    font-size: 35px;
+    font-weight: bolder;
+    float: right;
 }
 .price_details{
-    text-align: right;
     font-size: 28px;
-    color: rgb(13, 13, 14);
-}
-.reviews_details{
-    font-size: 15px;
-    display: flex;
+    color: rgb(57, 55, 55);
+    flex-direction: column;
 
 }
+.line{
+    width: 100%;
+    color: #030303;
+}
+.desc_details{
+    color: rgb(84, 79, 72);
+    font-size: 22px;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+.size_title{
+    font-size: 22px;
+    color: rgb(57, 55, 55);
+     margin-bottom: 5px;
+}
+.sizes{
+    display: flex;
+     gap: 10px;
+}
+.sizes div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+.color1 {
+    background: rgb(88, 217, 240);
+  }
+  .color2 {
+    background: rgb(211, 98, 226);
+  }
+  .color3 {
+    background: rgb(209, 207, 207);
+  }
+
+  .buy_btn{
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    width: 110px;
+    font-size: 15px;
+  }
+.reviews_details{
+    margin: 10px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.review {
+    border: 0.5px solid rgb(85, 70, 70);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+  }
+  .footer {
+    background: #FFEEF7;
+    padding: 30px;
+  }
+  
+  .footer .box-container {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 30px;
+    color: rgb(5, 5, 5);
+    padding: 12px 0;
+  }
+  
+  .footer .box-container .box h3 i {
+    color: #a4916d;
+    padding-right: 5px;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 22px;
+    color: #070707;
+    padding: 16px 0;
+    line-height: 1;
+  }
+  
+  .footer .box-container .box .share {
+    margin-top: 16px;
+  }
+  
+  .footer .box-container .box .share a {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    background: #a4916d;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .footer .box-container .box .share a:hover {
+    background: #666;
+    transform: rotate(360deg);
+  }
+  
+  .footer .box-container .box .link {
+    display: block;
+    font-size: 22px;
+    line-height: 1.5;
+    padding: 8px 0;
+    color: #030303;
+  }
+  
+  .footer .box-container .box .link:hover {
+    color: #a4916d;
+  }
+  
+  .footer .box-container .box .link i {
+    padding-right: 8px;
+    color: #a4916d;
+  }

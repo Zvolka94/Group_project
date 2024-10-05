@@ -222,6 +222,7 @@ header,footer, main{
 }
 
 .p_aboutus {
+
     font: 1em sans-serif;
     font-size: 23px;
     color: #1b291d;
@@ -348,46 +349,69 @@ header,footer, main{
     width: 100%;
 
 }
-
-.footer-menu {
+.footer {
+    background: #FFEEF7;
+    padding: 30px;
+  }
+  
+  .footer .box-container {
+    padding: 0 50px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.vert-menu {
-    margin-top: 40px;
-    list-style-type: none;
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
-    gap: 20px;
-    width: 400px;
-}
-
-
-.footer-elements-first {
-    font-family: "Readex Pro", sans-serif;
-    font-weight: 400;
+    justify-content: space-around;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 30px;
+    color: rgb(5, 5, 5);
+    padding: 12px 0;
+  }
+  
+  .footer .box-container .box h3 i {
+    color: #a4916d;
+    padding-right: 5px;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 22px;
+    color: #070707;
+    padding: 16px 0;
+    line-height: 1;
+  }
+  
+  .footer .box-container .box .share {
+    margin-top: 16px;
+  }
+  
+  .footer .box-container .box .share a {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
     font-size: 20px;
-    text-decoration: none;
-    color: #000;
-}
-
-.footer-elements {
-    margin-left: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #686868;
-    text-decoration: none;
-}
-
-.footer-elements:hover {
-    border-bottom: 2px solid #013a10;
-    width: fit-content;
-}
-
-footer{
-    height: 500px;
-}
+    background: #a4916d;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .footer .box-container .box .share a:hover {
+    background: #666;
+    transform: rotate(360deg);
+  }
+  
+  .footer .box-container .box .link {
+    display: block;
+    font-size: 22px;
+    line-height: 1.5;
+    padding: 8px 0;
+    color: #030303;
+  }
+  
+  .footer .box-container .box .link:hover {
+    color: #a4916d;
+  }
+  
+  .footer .box-container .box .link i {
+    padding-right: 8px;
+    color: #a4916d;
+  }
